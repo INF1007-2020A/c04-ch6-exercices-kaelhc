@@ -33,7 +33,14 @@ def contains_doubles(items: list) -> bool:
 
 def best_grades(student_grades: dict) -> dict:
     # TODO: Retourner un dictionnaire contenant le nom de l'étudiant ayant la meilleure moyenne ainsi que sa moyenne
-    return {}
+    liste_1 = list(student_grades.keys())
+    liste_2 = list(student_grades.values())
+    note = []
+    for i in liste_2:
+        note.append(sum(i) / len(i))
+    index_max = note.index(max(note))
+
+    return {liste_1[index_max] : max(note)}
 
 
 def frequence(sentence: str) -> dict:
