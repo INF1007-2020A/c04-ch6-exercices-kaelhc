@@ -46,8 +46,16 @@ def best_grades(student_grades: dict) -> dict:
 def frequence(sentence: str) -> dict:
     # TODO: Afficher les lettres les plus fréquentes
     #       Retourner le tableau de lettres
+    frequency = {}
+    for letter in sentence:
+        frequency[letter] = sentence.count(letter)
 
-    return {}
+    sorted_keys = sorted(frequency, key=frequency.__getitem__, reverse=True)
+    for keys in sorted_keys:
+        if frequency[keys] >5:
+            print(f"le caractere '{keys}' est repeter {frequency[keys]} fois ")
+
+    return {frequency[sorted_keys]}
 
 
 def get_recipes():
