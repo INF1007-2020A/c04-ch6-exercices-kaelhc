@@ -60,12 +60,20 @@ def frequence(sentence: str) -> dict:
 
 def get_recipes():
     # TODO: Demander le nom d'une recette, puis ses ingredients et enregistrer dans une structure de données
-    pass
+    name=input("donner le nom de la recette :\n")
+    ingredients=input("donner les ingredients de la recette separer par une , ").split(",")
+    return {name : ingredients}
 
 
 def print_recipe(ingredients) -> None:
     # TODO: Demander le nom d'une recette, puis l'afficher si elle existe
-    pass
+    name = input("donner le nom d'une recette :\n")
+    if name in ingredients :
+        print(ingredients[name])
+    else:
+        print("la recette demander n'existe pas ")
+        print(f"les recettes existantes sont :{list(ingredients.keys())}")
+        print_recipe(ingredients)
 
 
 def main() -> None:
