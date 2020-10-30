@@ -8,7 +8,11 @@ on:
   push:
     branches: master
     paths:
+<<<<<<< Updated upstream
       - exercices123.py
+=======
+      - exercice2.py
+>>>>>>> Stashed changes
       - README.md
       - logs/*
 jobs:

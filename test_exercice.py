@@ -6,7 +6,11 @@ import sys
 import unittest
 from collections import Counter
 
+<<<<<<< Updated upstream
 import exercices123
+=======
+import exercice2
+>>>>>>> Stashed changes
 
 
 class TestExercice(unittest.TestCase):
@@ -16,7 +20,11 @@ class TestExercice(unittest.TestCase):
             ["a", "2", "hello"]
         ]
 
+<<<<<<< Updated upstream
         output = [exercices123.order(v) for v in values]
+=======
+        output = [exercice2.order(v) for v in values]
+>>>>>>> Stashed changes
         answer = [sorted(v) for v in values]
 
         self.assertListEqual(
@@ -32,7 +40,11 @@ class TestExercice(unittest.TestCase):
         ]
         
         answer = [True, False]
+<<<<<<< Updated upstream
         output = [exercices123.anagrams(v) for v in words]
+=======
+        output = [exercice2.anagrams(v) for v in words]
+>>>>>>> Stashed changes
 
         self.assertEqual(
             output,
@@ -46,7 +58,11 @@ class TestExercice(unittest.TestCase):
             [1, 1, 2, 3, 5, 8]
         ]
 
+<<<<<<< Updated upstream
         output = [exercices123.contains_doubles(v) for v in values]
+=======
+        output = [exercice2.contains_doubles(v) for v in values]
+>>>>>>> Stashed changes
         answer = [False, True]
 
         self.assertListEqual(
@@ -59,7 +75,11 @@ class TestExercice(unittest.TestCase):
         value = {"Sam": [80, 90, 85], "Sei": [100, 50, 50]}
 
 
+<<<<<<< Updated upstream
         output = exercices123.best_grades(value)
+=======
+        output = exercice2.best_grades(value)
+>>>>>>> Stashed changes
         answer = {"Sam": 85}
 
         self.assertDictEqual(
@@ -74,7 +94,11 @@ class TestExercice(unittest.TestCase):
             "J'adore mon baccalaureat en genie informatique/logiciel"
         ]
 
+<<<<<<< Updated upstream
         output = [exercices123.frequence(s) for s in sentences]
+=======
+        output = [exercice2.frequence(s) for s in sentences]
+>>>>>>> Stashed changes
         answer = [dict(Counter(s)) for s in sentences]
 
         self.assertListEqual(

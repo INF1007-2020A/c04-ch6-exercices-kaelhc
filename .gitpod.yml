@@ -3,7 +3,11 @@ tasks:
   - init: |
       source settings/variables.txt
       python3 -m pip install -q git+"$classroom_tools_url"
+<<<<<<< Updated upstream
     command: python3 -m classroom_tools.auto_git --filename=exercices123.py
+=======
+    command: python3 -m classroom_tools.auto_git --filename=exercice2.py
+>>>>>>> Stashed changes
     openMode: tab-after
     name: Auto git
   - command: |
