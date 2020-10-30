@@ -6,7 +6,7 @@ import sys
 import unittest
 from collections import Counter
 
-import exercice
+import exercices123
 
 
 class TestExercice(unittest.TestCase):
@@ -16,7 +16,7 @@ class TestExercice(unittest.TestCase):
             ["a", "2", "hello"]
         ]
 
-        output = [exercice.order(v) for v in values]
+        output = [exercices123.order(v) for v in values]
         answer = [sorted(v) for v in values]
 
         self.assertListEqual(
@@ -32,7 +32,7 @@ class TestExercice(unittest.TestCase):
         ]
         
         answer = [True, False]
-        output = [exercice.anagrams(v) for v in words]
+        output = [exercices123.anagrams(v) for v in words]
 
         self.assertEqual(
             output,
@@ -46,7 +46,7 @@ class TestExercice(unittest.TestCase):
             [1, 1, 2, 3, 5, 8]
         ]
 
-        output = [exercice.contains_doubles(v) for v in values]
+        output = [exercices123.contains_doubles(v) for v in values]
         answer = [False, True]
 
         self.assertListEqual(
@@ -59,7 +59,7 @@ class TestExercice(unittest.TestCase):
         value = {"Sam": [80, 90, 85], "Sei": [100, 50, 50]}
 
 
-        output = exercice.best_grades(value)
+        output = exercices123.best_grades(value)
         answer = {"Sam": 85}
 
         self.assertDictEqual(
@@ -74,7 +74,7 @@ class TestExercice(unittest.TestCase):
             "J'adore mon baccalaureat en genie informatique/logiciel"
         ]
 
-        output = [exercice.frequence(s) for s in sentences]
+        output = [exercices123.frequence(s) for s in sentences]
         answer = [dict(Counter(s)) for s in sentences]
 
         self.assertListEqual(

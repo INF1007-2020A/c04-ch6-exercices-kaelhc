@@ -55,7 +55,7 @@ def frequence(sentence: str) -> dict:
         if frequency[keys] >5:
             print(f"le caractere '{keys}' est repeter {frequency[keys]} fois ")
 
-    return {frequency[sorted_keys]}
+    return frequency
 
 
 def get_recipes():
